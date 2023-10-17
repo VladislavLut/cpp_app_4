@@ -1,19 +1,19 @@
 #include <iostream>
-#include <Windows.h>
 #include <cmath>
-using std::cout;
-using std::cin;
-using std::endl;
 
-int main()
-{
-	system("chcp 1251");
-	system("cls");
-	float r1, r2, r3, r0;
-	cout << "¬вед≥ть значенн€ опор≥в r1, r2, r3: ";
-	cin >> r1 >> r2 >> r3;
-	r0 = 1 / (1 / r1 + 1 / r2 + 1 / r3);
-	cout << "«наченн€ опору R0: " << r0 << endl;
+using namespace std;
+
+int main() {
+	float l, r, s;
+
+	cout << "¬вед≥ть довжину кола: ";
+	cin >> l;
+
+	r = l / (2 * M_PI);
+
+	s = M_PI * pow(r, 2);
+
+	cout << "ѕлоща кола: " << s << endl;
+
 	return 0;
-
 }
